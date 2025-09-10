@@ -17,10 +17,9 @@
 
 form {
   display: flex;
-  align-items: center; // Centers items vertically on the cross-axis
-  justify-content: center; // Centers items horizontally on the main-axis
-  border: 1px solid variables.$border-color;
-  border-radius: variables.$border-radius;
+  align-items: center; 
+  justify-content: center;
+
 
   input[type="search"] {
     flex-grow: 0;
@@ -43,10 +42,10 @@ form {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); // Creates 3 equal-width columns
-  gap: variables.$grid-gap; // Sets the gap between grid items using the defined variable
+  grid-template-columns: repeat(3, 1fr); 
+  gap: variables.$grid-gap; 
 
-  & > * { // Styles direct children of .wrapper (representing individual cards)
+  & > * { 
     background-color: lightgray;
     border: 1px solid variables.$border-color;
     padding: 20px;
@@ -76,7 +75,7 @@ header{
 
 .fixed-btn-container {
   position: fixed;
-  bottom: variables.$footer-height + 20px; // Place 20px above the footer
+  bottom: variables.$footer-height + 20px; 
   left: 30px;
   z-index: 1000;
 
