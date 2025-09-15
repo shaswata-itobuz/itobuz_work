@@ -1,79 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/css/index.css">
 </head>
+
 <body>
-    <nav class ="nav">
-        <div class="nav_container"> 
+    <nav class="nav">
+        <div class="nav_container">
             <div class="nav-logo">
-                <h2>Catalog Z</h2>
+                <h2>Catalog-Z</h2>
             </div>
             <div class="nav-link">
                 <a href="#">Photos</a>
-                <a href="#">VIdeos</a>
+                <a href="#" class="active">Videos</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
-            </div>   
+            </div>
         </div>
     </nav>
-<!-- header -->
+
+    <!-- header -->
     <header>
         <div class="search-box">
-            <input type="text">
-            <button>Search...</button>
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
         </div>
     </header>
 
-<!-- main -->
- <main>
-    <div class="main-heading">
-        <h2>Latest videos</h2>
-        <p>page 1 of 180</p>
-    </div>
- </main>
-<!-- cards -->
-    <div class="wrapper">
-        <div class="upper-content-left">1</div>
-        <div class="upper-content-centre">2</div>
-        <div class="upper-content-right">3</div>
-        <div class="middle-content">4</div>
-        <div class="lower-content">5</div>
-        <div class="nav">6</div>
-    </div>
-    
-<!-- Pagination -->
+    <!-- main -->
+    <main class="main">
+        <div class="main-heading">
+            <div class="videos">
+                <h2>Latest Videos</h2>
+            </div>
+            <div class="heading-navigation">
+                <span>Page</span>
+                <span class="page-number">1</span>
+                <span>of 180</span>
+            </div>
+        </div>
 
-<div class="Pagination">
-    <button>Previous</button>
-    <div class="pagaination-button">
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-    </div> 
-    <button>Next Page</button>
-</div>
+        <!-- cards -->
+        <section class="layout-container">
+            <div class="grid-header">Header</div>
 
-<!-- footer -->
-<footer>
-    <div class="about">
-        <h3>About Catalog Z</h3>
-        <p></p>
-    </div>
+            <div class="grid-nav">Nav</div>
 
-    <div class='links'></div>
-        <h3><ul>    
-                <li><a href="#">Advertise</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Our company</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul></h3>
-    <div class='social'></div>
-</footer>
+            <div class="upper-content-left">Upper Content Left</div>
+            <div class="upper-content-center">Upper Content Center</div>
+            <div class="upper-content-right">Upper Content Right</div>
+
+            <div class="middle-content">Middle Content</div>
+
+            <div class="lower-content">Lower Content 2</div>
+
+            <div class="grid-footer">Sticky Footer</div>
+        </section>
+
+
+        <!-- Pagination -->
+
+        <div class="pagination">
+            <button class="prev">Previous</button>
+
+            <div class="pagination-buttons">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+            </div>
+
+            <button class="next">Next Page</button>
+        </div>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- About Section -->
+            <div class="footer-about">
+                <h3>About Catalog-Z</h3>
+                <p>Catalog Z is free Bootstrap 5 Alpha 2 HTML template for video and photo websites.
+                    You can freely use this TemplateMo layout for a front-end integration with any kind of CMS website.
+                </p>
+                <p class="copyright">Copyright 2020 Catalog Z Company. All rights reserved.</p>
+            </div>
+
+            <!-- Links Section -->
+            <div class="footer-links">
+                <h3>Our Links</h3>
+                <ul>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social and Policies -->
+            <div class="footer-social">
+                <div class="icons">
+                    <a href="#"><img src="facebook-icon.svg" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.svg" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.svg" alt="Instagram"></a>
+                    <a href="#"><img src="youtube-icon.svg" alt="YouTube"></a>
+                </div>
+                <div class="policies">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <p class="template-credit">Designed by TemplateMo</p>
+            </div>
+
+        </div>
+    </footer>
 
 
 </body>
+
 </html>
